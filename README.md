@@ -15,3 +15,13 @@ Some mental notes about my C++ Learnings
 brew install git
 git --version
 ```
+## Check Current Git User
+```
+git config --global user.name "adriensieg"
+git config --global user.email "adriensieg@hotmail.fr"
+```
+## Create a New SSH Key for New GitHub Account
+
+```
+ssh-keygen -t ed25519 -C "adriensieg@hotmail.fr"
+```
