@@ -33,3 +33,22 @@ Instead of **making a copy**, the function **works directly with the original da
 - When you need **to modify**: Use `&` (without const)
 
 The const `string&` pattern is considered best practice in modern C++ for **function parameters** that you only need to read from!
+
+### `Vector` vs. `List`
+
+- `Vector` is usually preferred because it's **faster for most operations and provides random access**
+- `List` is better when you frequently **insert/delete** in the middle
+- Use `push_back()` to **add elements to the end**
+- Use `push_front()` (list only) to **add to the beginning**
+
+### Common loop Patterns
+
+- **Range-based for loops**: `for (const auto& item : container)` are the **modern way to iterate**
+- Fill with **sequential numbers**: `for (int i = start; i <= end; i++)`
+- Fill with **user input**: `for (int i = 0; i < count; i++)`
+- Fill from **array**: `for (int i = 0; i < arraySize; i++)`
+
+
+
+
+
