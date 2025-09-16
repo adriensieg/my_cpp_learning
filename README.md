@@ -26,3 +26,10 @@ Instead of **making a copy**, the function **works directly with the original da
 - **Pass by value**: Like photocopying a document - you get your own copy to write on
 - **Pass by reference**: Like sharing the original document - faster, but you could accidentally write on it
 - **Pass by const reference**: Like sharing the original document with a "read-only" rule - fast AND safe
+
+#### When to use each:
+- **Small types** (`int`, `char`, `bool`): Pass by value is fine
+- **Large types** (`string`, `vector`, `custom objects`): Use `const &` for better performance
+- When you need **to modify**: Use `&` (without const)
+
+The const `string&` pattern is considered best practice in modern C++ for **function parameters** that you only need to read from!
