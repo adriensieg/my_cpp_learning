@@ -9,6 +9,8 @@ Some mental notes about my C++ Learnings
  
 ## Notes
 
+### `Pass by value` vs.
+
 The `&` in `const string&` `cardNumber` means you're passing the **parameter by reference** instead of **by value**. 
 
 ```cpp
@@ -20,3 +22,7 @@ string hideCreditCard(const string& cardNumber) {
 
 The `&` creates a **reference** - think of it as an "alias" or "nickname" for the original variable. 
 Instead of **making a copy**, the function **works directly with the original data**.
+
+- **Pass by value**: Like photocopying a document - you get your own copy to write on
+- **Pass by reference**: Like sharing the original document - faster, but you could accidentally write on it
+- **Pass by const reference**: Like sharing the original document with a "read-only" rule - fast AND safe
