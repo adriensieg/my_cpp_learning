@@ -1,6 +1,7 @@
 # My C++ learning
 Some mental notes about my C++ Learnings
 
+
 ## Resources
 - **Exercices**: https://programiz.pro/community-challenges/cpp
 - **Some great ressources**:
