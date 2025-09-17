@@ -4,6 +4,9 @@ Some mental notes about my C++ Learnings
 
 (Value vs. Reference vs. Const reference)[https://github.com/adriensieg/my_cpp_learning/blob/master/README.md#pass-by-value-vspass-by-reference-vs-pass-by-const-reference]
 
+```
+clang++ cardnumber.cpp -o cardnumber
+```
 
 ## Resources
 - **Exercices**: https://programiz.pro/community-challenges/cpp
