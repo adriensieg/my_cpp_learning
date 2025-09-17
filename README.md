@@ -50,6 +50,33 @@ The const `string&` pattern is considered best practice in modern C++ for **func
 - Fill from **array**: `for (int i = 0; i < arraySize; i++)`
 
 
+## Loop
+
+### Empty list
+
+```cpp
+#include <iostream> // For output
+#include <list>     // For std::list
+
+int main() {
+    // 1. Declare an empty list of integers
+    std::list<int> myEmptyList;
+
+    // 2. Use a loop to fill the list
+    for (int i = 0; i < 5; ++i) {
+        myEmptyList.push_back(i * 10); // Add elements to the end
+    }
+
+    // Optional: Print the elements to verify
+    std::cout << "Elements in the list: ";
+    for (int num : myEmptyList) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
 
 
 
