@@ -78,5 +78,23 @@ int main() {
 }
 ```
 
+### The foreach Loop
+There is also a `for-each loop` (also known as **ranged-based for loop**), which is used **to loop through elements** in **an array** (or other **data structures**).
 
+```cpp
+for (type variableName : arrayName) {
+  // code block to be executed
+}
 
+// Arrays
+int myNumbers[5] = {10, 20, 30, 40, 50};
+for (int num : myNumbers) {
+  cout << num << "\n";
+}
+
+// String
+string word = "Hello";
+for (char c : word) {
+  cout << c << "\n";
+}
+```
